@@ -1,0 +1,12 @@
+.apt_generated/
+.gradle/
+.metadata/
+.settings/
+bin/
+build/
+target/
+.classpath
+.project
+.factorypath
+.idea
+out
