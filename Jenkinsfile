@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'git pull origin master'
-        sh 'gradle build'
+        bat 'git pull origin master'
+        bat 'gradle build'
       }
     }
 
@@ -28,7 +28,7 @@ pipeline {
 
     stage('Analyze') {
       steps {
-        sh 'gradle sonarqube'
+        bat 'gradle sonarqube'
       }
     }
 
