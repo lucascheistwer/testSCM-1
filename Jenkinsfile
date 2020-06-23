@@ -33,5 +33,11 @@ pipeline {
       }
     }
 
+    stage('Test Report') {
+      steps {
+        bat 'gradlew -i test jacocoTestReport'
+      }
+    }
+
   }
 }
