@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         bat 'git pull origin master'
-        sh 'gradlew.bat :spotlessApply'
+        bat 'gradlew.bat :spotlessApply'
         bat 'gradle build'
       }
     }
