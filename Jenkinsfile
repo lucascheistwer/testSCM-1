@@ -5,7 +5,6 @@ pipeline {
       steps {
         sh 'git pull origin master'
         sh 'gradle build'
-        sh 'gradle bootRun'
       }
     }
 
